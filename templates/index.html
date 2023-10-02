@@ -1,0 +1,402 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+       
+        <link rel="stylesheet" href="{%static 'css/bootstrap.css'%}">
+        <link rel="stylesheet" href="{%static 'css/style.css'%}">
+        <link rel="stylesheet" href="{%static 'css/font-awesome.css'%}">
+
+
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+            
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="navbar-nav d-flex justify-content-center">
+                    <ul class="navbar-nav my-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Our Services</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Package</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">About Us</a>
+                          </li>
+                    </ul>
+                 
+                  <img id="logo" class="ms-3 me-3" src="{%static 'image/logo.png'%}" alt="Adhikari Catreen">
+
+                  <ul class="navbar-nav my-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Gallary</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Message Us</a>
+                      </li>
+                      <li class="nav-item">
+                        <button class="btn btn-outline-success">
+                          <i class="fa fa-phone"></i> 9861397171, 9871781781
+                        </button>
+                      
+                      </li>
+    
+                  </ul>
+                 
+
+                </div>
+            
+              </div>
+            </div>
+          </nav>
+          {% block content %}
+          <div class="container-fluid p-0 m-0">
+
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2500">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="{%static 'image/slider1.jpeg'%}" class="d-block w-100" alt="Dubai Pro Service">
+                  <div class="carousel-caption d-none d-md-block my-auto">
+                    <h1>APPLY FOR VISA</h1>
+                    <p>Some representative placeholder content for the first slide. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea voluptas reiciendis esse consectetur odio fuga autem labore unde sapiente voluptate vero blanditiis corporis, error dolorum velit eveniet eius distinctio fugit!</p>
+                    <button class="btn btn-success">
+                      Know More
+                    </button>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="{%static 'image/slider2.jpeg'%}" class="d-block w-100" alt="Dubai Pro Service">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h1>Get Sponsor and agent</h1>
+                    <p>Some representative placeholder content for the second slide.</p>
+                    <button class="btn btn-danger">
+                      Know More
+                    </button>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="{%static 'image/slider3.jpeg'%}" class="d-block w-100" alt="Dubai Pro Service">
+                  <div class="carousel-caption d-none d-md-block text-center my-auto">
+                    <h1>Get Appointment</h1>
+                    <p>Some representative placeholder content for the third slide.</p>
+                    <button class="btn btn-success">
+                      Know More
+                    </button>
+                    
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="{%static 'image/slider4.jpeg'%}" class="d-block w-100" alt="Dubai Pro Service">
+                  <div class="carousel-caption d-none d-md-block my-auto">
+                    <h1>Make Documents</h1>
+                    <p>Some representative placeholder content for the third slide. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores sapiente quod eaque neque ea eligendi ad? Dolorum dicta doloremque perspiciatis accusamus quas a rerum cupiditate assumenda, dignissimos, in perferendis eos.</p>
+                    <button class="btn btn-danger">
+                      Know More
+                    </button>
+                  </div>
+                </div>
+                
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+           
+          </div>
+         <div class="mt-3" id="below-img">
+           <div class="row m-0">
+            <div class="col-12 col-lg-6">
+              <img src="{%static 'image/about.jpeg'%}" alt="">
+            </div>
+            <div class="col-12 col-lg-6 my-auto">
+              <h1 class="mt-4">About Us</h1>
+              <p class="mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum neque perspiciatis quia. Libero dignissimos tenetur harum quasi eius quos totam numquam rem voluptate temporibus neque, nulla dolorum amet distinctio in!</p>
+              <button class="mt-3 btn btn-success p-3">
+                Know More About Us
+              </button>
+            
+            </div>
+
+           </div>
+         </div>
+
+
+         <div class="row p-3 m-0 mt-3 ser-item">
+          <div class="mt-2 col-12 col-lg-3">
+           
+            <img src="{%static 'image/birthday.jpeg'%}" alt="" class="service-img">
+            <div class="serv-back">
+              <h3 class="service-title">Birthday Party</h3>
+            </div>
+            
+          </div>
+
+          <div class="mt-2 col-12 col-lg-3">
+          
+            <img src="{%static 'image/marriage.webp'%}" alt="" class="service-img">
+            <div class="serv-back">
+            <h3 class="service-title">Marriage Party</h3>
+
+            </div>
+          </div>
+
+          <div class="mt-2 col-12 col-lg-3">
+           
+            <img src="{%static 'image/bartabanda.webp'%}" alt="" class="service-img">
+            <div class="serv-back">
+            <h3 class="service-title">Bartabanda Party</h3>
+
+            </div>
+          </div>
+
+          <div class="mt-2 col-12 col-lg-3">
+          
+            <img src="{%static 'image/event.jpeg'%}" alt="" class="service-img">
+            <div class="serv-back">
+            <h3 class="service-title">Event Party</h3>
+            
+            </div>
+          </div>
+
+         </div>
+
+         <div class="row m-0 " id="infoback"> 
+          <div class="info-box text-center m-auto p-4 ">
+            <img src="{%static 'image/remember.gif'%}" alt="">
+            <h1 class="mt-3">Remember Us</h1>
+            <hr>
+            <p class="mt-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum dignissimos animi minus officii
+              s debitis unde quasi tempora vitae, vel, magnam commodi nemo eveniet, in molestiae esse cum hic provident eos.</p>
+  
+          </div>
+          
+         </div>
+
+         <div class="row m-0" id="long-text" > 
+          <div class="text-center m-auto p-4 ">
+           
+            <h1 class="mt-3">we give tge bes </h1>
+            <hr>
+            <p class="mt-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum dignissimos animi minus officii
+              s debitis unde quasi tempora vitae, vel, magnam commodi nemo eveniet, in molestiae esse cum hic provident eos.</p>
+  
+            <P class="mt-3">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga corporis fugit accusamus corrupti ut? Voluptas
+                alias non tenetur reprehenderit doloremque repellat magnam! Culpa molestias eaque similique rerum ipsum, perferendis aspernatur.
+            </P>
+           
+              <img class="m-auto" src="{%static 'image/bgtext.png'%}" alt="" id="tomato">
+             
+            </div>
+          </div>
+          
+         </div>
+
+        <div class="container mt-4">
+            <div class="row">
+                <div class="col-12 col-lg-6 mt-2">
+                  <img class="my-auto" src="{%static 'image/contact.avif'%}" alt="">
+                </div>
+                <div class="col-12 col-lg-6 mt-2 p-2">
+                  <div class="contact-box p-3">
+                    <h6 class=" fa-2x text-danger"> CONTACT US</h6>
+                    <hr>
+                    <div>
+                      <i class="fa fa-map-location"></i>  Dubai St.pro seuvai ajsas
+                    </div>
+                    <div>
+                      <i class="fa fa-phone-square"></i>  +61 1686 76186
+                    </div>
+                    <div>
+                      <i class="fa fa-envelope-circle-check"></i>  info@dubaiproservice
+                    </div>
+                    <div>
+                      <i class="fa fa-link"></i>  www.dubaiproservice.com
+                    </div>
+                    <h6 class="text-dark mt-3">
+                      Send us message
+                    </h6>
+                    <hr>
+                    <form action="" method="post">
+                      <p class="text-secondary">
+                        Full Name*
+                      </p>
+                      {{contact.fullname}}
+                      <p class="text-secondary">
+                        Email*
+                      </p>
+                      {{contact.email}}
+                      <div class="row">
+                        <div class="col-6">
+                          <p class="text-secondary">
+                            Address*
+                          </p>
+                          {{contact.address}}
+                        </div>
+                        <div class="col-6">
+                          <p class="text-secondary">
+                            Number*
+                          </p>
+                          {{contact.number}}
+                        </div>
+                      </div>
+                      
+                      <p class="text-secondary">
+                        Message*
+                      </p>
+                      {{contact.message}}
+                      {% csrf_token %}
+                      <button class="btn btn-outline-danger mt-3">
+                        <i class="fa fa-message"></i>
+                          SEND MESSAGE
+                      </button>
+                    </form>
+                    
+                  </div>
+
+                </div>
+            </div>
+          </div>
+
+
+          
+      {% endblock content %}
+      <div class="container-fluid mt-5 mb-5">
+        <div class="row m-0">
+          <h3 class="text-dark text-center">
+            CONNECT WITH US NOW
+          </h3>
+          <hr>
+          <div class="d-flex justify-content-evenly p-4">
+            <i class="fa-brands fa-square-facebook text-danger fa-2x"></i>
+            <i class="fa-brands fa-square-google-plus text-danger fa-2x"></i>
+            <i class="fa-brands fa-square-instagram text-danger fa-2x"></i>
+            <i class="fa-brands fa-square-whatsapp text-danger fa-2x"></i>
+            <i class="fa-brands fa-square-twitter text-danger fa-2x"></i>
+          </div>
+        
+        </div>
+      </div>
+     
+      <div class="container-fluid bg-dark p-2 pb-4">
+        <div class="row m-0">
+          <div class="col-12 col-lg-10 m-auto">
+            <div class="row p-2 m-auto" id="footer">
+              <div class="col-12 col-lg-4 mt-3 ms-auto">
+                <div>
+                  <h6 class="text-light"> External Link </h6>
+                  <hr class="text-light">
+                  <p class="text-light">
+                    <a href="">
+                      Privacy and Policy
+                    </a>
+                  </p>
+                  <p class="text-light">
+                    <a href="">
+                      Terms and Conditions
+                    </a>
+                  </p>
+                  <p class="text-light">
+                    <a href="">
+                      Required Documents
+                    </a>
+                  </p>
+                </div>
+                
+              </div>
+              <div class="col-12 col-lg-4 mt-3 ms-auto">
+                <div>
+                  <h6 class="text-light"> Popular Services </h6>
+                  <hr class="text-light">
+                  <hr>
+                  <p class="text-light">
+                    <a href="">
+                      Get Medical Appointment
+                    </a>
+                  </p>
+                  <p class="text-light">
+                    <a href="">
+                      Apply for Tourist Visa
+                    </a>
+                  </p>
+                  <p class="text-light">
+                    <a href="">
+                      Apply Visit Visa
+                    </a>
+                  </p>
+                  <p class="text-light">
+                    <a href="">
+                      Make Salary Certificate
+                    </a>
+                  </p>
+                  <p class="text-light">
+                    <a href="">
+                      Remove Fine
+                    </a>
+                  </p>
+                </div>
+              </div>
+              <div class="col-12 col-lg-4 mt-3 ms-auto">
+                <div>
+                <h6 class="text-light"> Contact Details </h6>
+                <hr class="text-light">
+                <hr>
+                <p class="text-light">
+                  <i class="fa fa-map-location"></i>  Dubai St.pro seuvai ajsas
+                </p>
+                <p class="text-light">
+                  <i class="fa fa-phone-square"></i>  +61 1686 76186
+
+                </p>
+
+                <p class="text-light">
+                  <i class="fa fa-envelope-circle-check"></i>  info@dubaiproservice
+
+                </p>
+               
+              </div>
+            </div>
+          </div>
+          <div class="col-12 bg-secondary p-2 text-center">
+            <h6 class="text-light">
+              Dubai Pro Service
+            </h6>
+            <p class="text-light">
+              Design and Developed by Wake and Tech Nepal Private Limited
+            </p>
+          </div>
+        </div>
+          
+      </div>
+    
+        <script src="{%static 'js/bootstrap.js'%}" async defer></script>
+        <script src="{%static 'js/font-awesome.js'%}" async defer></script>
+        <script src="{%static 'js/script.js'%}" async defer></script>
+
+    </body>
+</html>

@@ -1,0 +1,106 @@
+body{
+    background-color: #fcfcfe;
+}
+
+#logo{
+    height: auto;
+    width: 10%;
+}
+
+.navbar{
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 8) 0%, rgba(255, 255, 255, 0) 100%);
+  
+
+}
+.nav-item{
+    font-size: 18px;
+    color: black!important;
+    font-weight: 500;
+    padding: 10px;
+
+}
+.nav-link{
+    color: black;
+}
+.nav-item:hover{
+   border-bottom: 2px solid greenyellow;
+}
+
+.carousel-item img{
+    height: 100vh;
+}
+
+.carousel-item{
+    position: relative;
+}
+
+.carousel-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2); /* Adjust the last value (0.5) to control opacity (0 = fully transparent, 1 = fully opaque) */
+    z-index: 1; /* Place the overlay above the image */
+  }
+.carousel-caption{
+    top: 40%;
+}
+
+#below-img img{
+    height: auto;
+    width: 100%;
+}
+.ser-item{
+    height: 300px;
+}
+.service-img{
+    height: 250px;
+    position:absolute;
+    /* z-index: 999; */
+    width: 23%;
+    /* width: 100%; */
+    border-radius: 10px;
+}
+.serv-back{
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 250px;
+    border-radius: 10px;
+    width: 102%;
+    /* overflow: hidden; */
+    position: relative;
+
+}
+.service-title{
+    position: relative;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    top: 100px;
+    font-weight: bold;
+    font-size: 37px;
+}
+
+#infoback{
+    background-image: url('../image/info.jpeg');
+    background-size: 100% 100%;
+    height: 80vh;
+    background-attachment: fixed;
+}
+
+.info-box{
+   
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    background-color: rgb(255, 255, 255);
+}
+
+.info-box img{
+    height: 200px;
+}
+
+#tomato{
+    height: 300px;
+    width: auto;
+}
